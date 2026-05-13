@@ -22,7 +22,7 @@ html, body {
   padding: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: "Charter", "Iowan Old Style", "Source Serif Pro", Georgia, serif;
+  font-family: "Source Serif 4", "Lora", "Source Serif 4", Georgia, serif;
   font-size: 18px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -407,3 +407,19 @@ footer {
   .nav a { font-size: 12px; }
   .hero { margin-top: 32px; }
 }
+
+/* polish */
+html{scroll-behavior:smooth}
+*::selection{background:rgba(0,0,0,0.85);color:#fff}
+img,svg{max-width:100%;height:auto;display:block}
+*:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.tool,.callout,.feature-card,.case,.stack,.criteria,.dir-card,.cat-card,.tco{transition:transform 240ms cubic-bezier(.2,.7,.3,1),box-shadow 240ms cubic-bezier(.2,.7,.3,1),border-color 240ms ease}
+.tool:hover,.case:hover,.feature-card:hover,.stack:hover,.dir-card:hover,.cat-card:hover{transform:translateY(-3px);box-shadow:0 18px 36px rgba(0,0,0,0.08),0 2px 6px rgba(0,0,0,0.04)}
+.cta{box-shadow:0 6px 18px rgba(0,0,0,0.14);transition:transform 180ms ease,box-shadow 180ms ease}
+.cta:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(0,0,0,0.2)}
+h1,h2,h3,h4{text-wrap:balance;letter-spacing:-0.01em}
+p,.dek{text-wrap:pretty}
+.tool h3 a,.brand,nav a{transition:color 160ms ease}
+.body a:not(.byline-name):not(.brand),.wrap a:not(.brand){background-image:linear-gradient(currentColor,currentColor);background-position:0 100%;background-size:0% 1px;background-repeat:no-repeat;transition:background-size 220ms ease}
+.body a:not(.byline-name):not(.brand):hover,.wrap a:not(.brand):hover{background-size:100% 1px}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation-duration:0.01ms !important;transition-duration:0.01ms !important;scroll-behavior:auto !important}}
